@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Nanum+Pen+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Gaegu", cursive;
+  --font-serif: "Gaegu", cursive;
+  --font-hand: "Gaegu", cursive;
+  --font-pen: "Nanum Pen Script", cursive;
+  
+  --color-k-cream: #FFFDF5;
+  --color-k-beige: #F9F4E8;
+  --color-k-sage: #E8F5E9;
+  --color-k-rose: #FFF0F3;
+  --color-k-ink: #5D5451;
+  --color-k-accent: #B08968;
+  
+  /* Cute Pastel Palette */
+  --color-cute-pink: #FFD1DC;
+  --color-cute-yellow: #FFF9C4;
+  --color-cute-blue: #E3F2FD;
+  --color-cute-green: #E8F5E9;
+  --color-cute-purple: #F3E5F5;
+  --color-cute-orange: #FFF3E0;
+}
+
+@layer components {
+  .hand-drawn {
+    border: 2px solid var(--color-k-ink);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+  
+  .hand-drawn-soft {
+    border: 1.5px solid rgba(74, 74, 74, 0.2);
+    border-radius: 12px;
+  }
+}
+
+body {
+  background-color: var(--color-k-cream);
+  color: var(--color-k-ink);
+  font-family: "Gaegu", cursive;
+}
